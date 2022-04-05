@@ -1,3 +1,5 @@
+from dicionario import get_dicionarios
+
 def get_deter(ano):
     import os
     import time
@@ -143,6 +145,7 @@ def get_deter(ano):
     time.sleep(3)
 
 if __name__ == "__main__":
-    anos = range(2000, 2022, 1)
+    anos = range(2000, 2021, 1)
     for ano in anos:
         get_deter(ano)
+    get_dicionarios()
